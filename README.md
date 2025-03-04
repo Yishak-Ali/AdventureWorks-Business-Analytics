@@ -57,9 +57,9 @@ The orignal sample data for AdventureWorks was created and made accessible by Mi
 		2. Extract the .zip and compile all of the CSV files, update_csvs.rb and install.sql files into the same folder.
 
 		3. Run the following in your terminal / command prompt to modify the CSVs to work with Postgres:
-			
-			`ruby update_csvs.rb`
-
+			```
+			ruby update_csvs.rb
+			```
 		4. Finally, run the below to set up a new local Postgres database and load the data:
 			```
 			psql -c "CREATE DATABASE \"adventureworks\";"
