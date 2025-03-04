@@ -11,7 +11,7 @@ This project analyzes the popular AdventureWorks Cycle dataset detailing transac
 
 ## Key Outputs
 
-The cumulative output and insights of this work is presented in the following:
+The cumulative output and insights of this work are presented in the following:
 
 [AdventureWorks Interactive Tableau Dashboard](https://public.tableau.com/views/AdventureWorksDashboard_17409660938970/OverviewDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
@@ -37,13 +37,13 @@ The cumulative output and insights of this work is presented in the following:
 
 The data used for this project is available at this [Github repository](https://github.com/lorint/AdventureWorks-for-Postgres?tab=readme-ov-file), which provides the scripts needed to set up the OLTP database for Postgres.
 
-The orignal sample data for AdventureWorks was created and made accessible by Microsoft for training and testing their stack (e.g. MS SQL Server) but has since been adopted for other applications like Postgres, as is the case here. 
+The orignal sample data for AdventureWorks was created and made accessible by Microsoft for training and testing their stack (e.g. MS SQL Server) but has since been adapted for other applications like Postgres, as is the case here. 
 
 ## How to Use
 
 1. Setup local Postgres database via two options:
 
-	1. Option 1: Direct setup: 
+	1. Option 1 - Direct setup: 
 		1. Download the [adventure_works-oltp-install-script](https://github.com/Yishak-Ali/AdventureWorks-Business-Analytics/tree/main/adventure_works-oltp-install-script) folder which has the SQL install script and preprocessed CSV data files modified to work with Postgres.
 
 		2. Run the following in your terminal / command prompt to set up a new local Postgres database and load the data:
@@ -51,7 +51,7 @@ The orignal sample data for AdventureWorks was created and made accessible by Mi
 			psql -c "CREATE DATABASE \"adventureworks\";"
 			psql -d adventureworks < install.sql
 		    ```
-	2. Option 2: Setup from source:
+	2. Option 2 - Setup from source:
 		1. Download [AdventureWorks OLTP script](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks-oltp-install-script.zip) as well as the update_csvs.rb and install.sql files in the [linked repository](https://github.com/lorint/AdventureWorks-for-Postgres?tab=readme-ov-file).
 		
 		2. Extract the .zip and compile all of the CSV files, update_csvs.rb and install.sql files into the same folder.
@@ -69,6 +69,6 @@ The orignal sample data for AdventureWorks was created and made accessible by Mi
 
 3. Modify the database connection string in the first code chunk with your relevant username, host, and port information and run the .ipynb script.
 
-4. To export the used tables as Excel files for Tableau, prior to running the .ipynb script, uncomment the last line of each code chunk in the 'Export files for Tableau' section. Alternatively, download the [combined_tables.xlsx](https://github.com/Yishak-Ali/AdventureWorks-Business-Analytics/tree/main/data) file which has all the tables used / exported for analysis compiled in a single Excel workbook for Tableau connection. 
+4. To export the used tables as Excel files for Tableau, prior to running the .ipynb script, uncomment the last line of each code chunk in the 'Export files for Tableau' section. Alternatively, download the [combined_tables.xlsx](https://github.com/Yishak-Ali/AdventureWorks-Business-Analytics/tree/main/data) file, which has all the tables used for analysis compiled in a single Excel workbook for Tableau connection. 
 
 
